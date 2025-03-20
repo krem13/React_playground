@@ -1,6 +1,6 @@
 # React and Typescript project powered by Chess.com API
 
-[![ChessAPI](https://images.chesscomfiles.com/uploads/v1/news/398544.e72c42cb.668x375o.42da47f2061b@2x.png | width=100)](https://www.chess.com/news/view/published-data-api#pubapi-leaderboards)
+[![image](https://images.chesscomfiles.com/uploads/v1/news/398544.e72c42cb.668x375o.42da47f2061b@2x.png = 100x)](https://www.chess.com/news/view/published-data-api#pubapi-leaderboards)
 [Design in Figma](https://www.figma.com/design/EVVFzF6BpC2s48AHQXBaUV/KD-test?node-id=0-1&p=f&t=s66TlqWkbwF4DHKn-0)
 
 It's a small app that displays Leaderbords for the Chess API games. The results are shown by game as Top 10 players list with players's rank, avatar, name and score.

@@ -5,7 +5,7 @@
 
 It's a small app that displays Leaderbords for the Chess API games. The results are shown by game as Top 10 players list with players's rank, avatar, name and score.
 
-![Leaderboard component](http://url/to/img.png)
+![Leaderboard component](https://github.com/krem13/React_playground/blob/main/app/public/ChessApiLeaderboards.png)
 
 ## Project Setup
 

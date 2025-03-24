@@ -18,7 +18,6 @@ export default function GameSelect(props: GameSelectProps) {
             isClearable={false}
             backspaceRemovesValue={true}
             placeholder={'Select a game'}
-            defaultValue={props.options[0]}
         />
     );
 }

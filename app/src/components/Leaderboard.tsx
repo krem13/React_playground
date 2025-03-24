@@ -10,7 +10,7 @@ function onClick() {
 export default function Leaderboard() {
   const [players, setPlayers] = useState<Player[]>([]);
   const [games, setGames] = useState<string[]>([]);
-  const [selectedGame, setSelectedGame] = useState("daily");
+  const [selectedGame, setSelectedGame] = useState('Select a game');
 
   useEffect(() => {
     fetch('https://api.chess.com/pub/leaderboards')
@@ -19,7 +19,9 @@ export default function Leaderboard() {
       })
       .then((data) => {
         setGames(Object.entries(data).map((item) => item[0]));
-        setPlayers(data[selectedGame].slice(0, 10));
+        if (selectedGame && data[selectedGame]) { 
+          setPlayers(data[selectedGame].slice(0, 10));
+        }
       });
   }, [selectedGame]);
 
@@ -37,7 +39,10 @@ export default function Leaderboard() {
         </div>
       </div>
       <div className="w-full p-4">
-        { players.map((item, index) => <LeaderboardItem key={index} item={item} />) }
+        { selectedGame !== 'Select a game' &&
+          players.map((item, index) => <LeaderboardItem key={index} item={item} />)
+        }
+        <p className='text-white'>Note! You have to choose a game to see the leaderboard.</p>
       </div>
       <div className="border-t-[1px] border-gray-400 w-full bg-white py-8">
         <button onClick={onClick} className='text-[#8c8c8c] font-semibold uppercase border-gray-400 border-[1px] px-8 py-2 rounded-3xl hover:bg-slate-100 hover:font-bold'>

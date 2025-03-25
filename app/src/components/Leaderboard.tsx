@@ -10,7 +10,7 @@ function onClick() {
 export default function Leaderboard() {
   const [players, setPlayers] = useState<Player[]>([]);
   const [games, setGames] = useState<string[]>([]);
-  const [selectedGame, setSelectedGame] = useState('Select a game');
+  const [selectedGame, setSelectedGame] = useState('');
 
   useEffect(() => {
     fetch('https://api.chess.com/pub/leaderboards')
@@ -18,7 +18,9 @@ export default function Leaderboard() {
         return res.json();
       })
       .then((data) => {
-        setGames(Object.entries(data).map((item) => item[0]));
+        if (Object.entries(data).length > 0) {
+          setGames(Object.entries(data).map((item) => item[0]));
+        }
         if (selectedGame && data[selectedGame]) { 
           setPlayers(data[selectedGame].slice(0, 10));
         }
@@ -28,13 +30,13 @@ export default function Leaderboard() {
   return (
     <div className="relative overflow-hidden flex flex-col items-center justify-center w-full max-w-[25rem] bg-[#0B6E77] shadow-md border-[1px] border-gray-300 rounded-[10px]" >
       <div className="p-8 border-b-[1px] border-gray-400 w-full flex flex-col items-center justify-center">
-        <div className='flex items-center justify-between w-full mb-2'>
+        <div className='flex items-center justify-between w-full mb-4'>
             <img alt="icon" src="star_icon.svg" />
             <p className="text-[#DAF1D6] font-bold uppercase text-2xl">Leaderboard</p>
             <img alt="icon" src="star_icon.svg" />
         </div>
         <div className='w-full text-left'>
-          <div className='mb-3 text-[#DAF1D6] text-center'>for</div>
+          {/* <div className='mb-3 text-[#DAF1D6] text-center'>for</div> */}
           <GameSelect selectedGame={selectedGame} setSelectedGame={setSelectedGame} options={games} />
         </div>
       </div>
@@ -42,7 +44,9 @@ export default function Leaderboard() {
         { selectedGame !== 'Select a game' &&
           players.map((item, index) => <LeaderboardItem key={index} item={item} />)
         }
-        <p className='text-white'>Note! You have to choose a game to see the leaderboard.</p>
+        { selectedGame === 'Select a game' && 
+          <p className='text-white'>Note! You have to choose a game to see the leaderboard.</p>
+        }
       </div>
       <div className="border-t-[1px] border-gray-400 w-full bg-white py-8">
         <button onClick={onClick} className='text-[#8c8c8c] font-semibold uppercase border-gray-400 border-[1px] px-8 py-2 rounded-3xl hover:bg-slate-100 hover:font-bold'>

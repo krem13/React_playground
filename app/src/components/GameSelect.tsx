@@ -1,8 +1,29 @@
-import Select, { SingleValue } from 'react-select';
+import React from 'react';
+import Select from 'react-select';
 import { GameSelectProps } from '../types/leaderboard.interface';
   
-export default function GameSelect(props: GameSelectProps) {
-    const handleChange = (option: SingleValue<string>) => {
+export default function GameSelect<Option>(props: GameSelectProps<Option>) {
+    const games = [
+        "daily",
+        "daily960",
+        "live_rapid",
+        "live_blitz",
+        "live_bullet",
+        "live_bughouse",
+        "live_blitz960",
+        "live_threecheck",
+        "live_crazyhouse",
+        "live_kingofthehill",
+        "tactics",
+        "rush",
+        "battle"
+    ] as Option[];
+    
+    console.log('games: ', props.options as Option[]);
+    console.log('selected game: ', props.selectedGame);
+    
+    const handleChange = (option: Option | null) => {
+        console.log('selected game in: ', option);
         if (option) {
             props.setSelectedGame(option);
         }
@@ -10,13 +31,8 @@ export default function GameSelect(props: GameSelectProps) {
 
     return (
         <Select
-            value={props.selectedGame}
+            options={games}
             onChange={handleChange}
-            getOptionLabel={(option: string) => option}
-            getOptionValue={(option: string) => option}
-            options={props.options}
-            isClearable={false}
-            backspaceRemovesValue={true}
             placeholder={'Select a game'}
         />
     );

@@ -5,10 +5,17 @@ export type Player = {
     score: number;
 }
 
-export interface GameSelectProps {
-  selectedGame: string | null;
-  setSelectedGame: (game: string) => void;
+export interface GameSelectProps<Option> {
+  selectedGame: Option;
+  setSelectedGame: (game: Option) => void;
+  options: Option[];
+}
+
+export interface CustomSelectProps {
   options: string[];
+  value: string;
+  onChange: (value: string) => void;
+  placeholder?: string;
 }
 
 export interface LeaderboardItemProps {

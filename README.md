@@ -1,5 +1,6 @@
 # React and Typescript project
 It's a sandbox for learning & experimenting with React, Typescript, Next, Tailwind, Storybook and other things from the modern stack.
+I create issues in the repository for each new feature/experiment. You can check them out if you would like to quickly check what's been done.
 
 ## Project Setup
 

@@ -58,7 +58,6 @@ The styling is done with [tailwindcss](https://tailwindcss.com/).
 
 ### Added files
 
-- src/components/GameSelect.tsx
 - src/components/CustomSelect.tsx
 - src/components/Leaderboard.tsx
 - src/components/LeaderboardItem.tsx

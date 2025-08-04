@@ -5,12 +5,6 @@ export type Player = {
     score: number;
 }
 
-export interface GameSelectProps<Option> {
-  selectedGame: Option;
-  setSelectedGame: (game: Option) => void;
-  options: Option[];
-}
-
 export interface CustomSelectProps {
   options: string[];
   value: string;

@@ -1,13 +1,23 @@
 import React from 'react';
-import Layout from './pages/Layout';
-import Projects from './pages/Projects';
 import { BrowserRouter } from 'react-router-dom';
+import Layout from './pages/Layout';
+import About from './pages/About';
+import Projects from './pages/Projects';
+import Contact from './pages/Contact';
 
 export default function App() {
   return (
     <BrowserRouter>
       <Layout>
-        <Projects />
+        <div id="about">
+          <About />
+        </div>
+        <div id="projects">
+          <Projects />
+        </div>
+        <div id="contact">
+          <Contact />
+        </div>
       </Layout>
     </BrowserRouter>
   );

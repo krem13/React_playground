@@ -5,12 +5,6 @@ type LayoutProps = {
   children: React.ReactNode;
 };
 
-const navLinks = [
-  { href: '/', label: 'Home' },
-  { href: '/about', label: 'About' },
-  { href: '/contact', label: 'Contact' },
-];
-
 const footerLinks = [
   { href: '/privacy', label: 'Privacy Policy' },
   { href: '/terms', label: 'Terms of Service' },
@@ -18,6 +12,17 @@ const footerLinks = [
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   const [menuOpen, setMenuOpen] = useState(false);
+
+  // Scroll handler for About and Projects
+  const handleScroll = (id: string) => {
+    setMenuOpen(false);
+    setTimeout(() => {
+      const el = document.getElementById(id);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 100); // Timeout ensures menu closes before scroll
+  };
 
   return (
     <>
@@ -27,16 +32,34 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             <Link to="/">My React Sandbox</Link>
           </div>
           <nav className={`fixed top-0 left-0 h-full w-2/3 bg-blue-800 z-40 transform ${menuOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-200 ease-in-out md:static md:h-auto md:w-auto md:bg-transparent md:translate-x-0 flex flex-col md:flex-row md:items-center gap-6 md:gap-8 p-6 md:p-0`}>
-            {navLinks.map(link => (
-              <Link
-                key={link.href}
-                to={link.href}
-                onClick={() => setMenuOpen(false)}
-                className="block py-2 px-4 rounded hover:bg-blue-600 md:hover:bg-transparent md:hover:underline text-lg md:text-base"
-              >
-                {link.label}
-              </Link>
-            ))}
+            <Link
+              to="/"
+              onClick={() => setMenuOpen(false)}
+              className="block py-2 px-4 rounded hover:bg-blue-600 md:hover:bg-transparent md:hover:underline text-lg md:text-base"
+            >
+              Home
+            </Link>
+            <button
+              type="button"
+              onClick={() => handleScroll('about')}
+              className="block py-2 px-4 rounded hover:bg-blue-600 md:hover:bg-transparent md:hover:underline text-lg md:text-base text-left bg-transparent border-0"
+            >
+              About
+            </button>
+            <button
+              type="button"
+              onClick={() => handleScroll('projects')}
+              className="block py-2 px-4 rounded hover:bg-blue-600 md:hover:bg-transparent md:hover:underline text-lg md:text-base text-left bg-transparent border-0"
+            >
+              Projects
+            </button>
+            <button
+              type="button"
+              onClick={() => handleScroll('contact')}
+              className="block py-2 px-4 rounded hover:bg-blue-600 md:hover:bg-transparent md:hover:underline text-lg md:text-base text-left bg-transparent border-0"
+            >
+              Contact
+            </button>
           </nav>
           <button
             className="md:hidden flex flex-col gap-1.5 z-50"
@@ -47,7 +70,6 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             <span className="block w-7 h-1 bg-white rounded"></span>
             <span className="block w-7 h-1 bg-white rounded"></span>
           </button>
-          {/* Overlay for mobile menu */}
           {menuOpen && (
             <div
               className="fixed inset-0 bg-black bg-opacity-40 z-30 md:hidden"

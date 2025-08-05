@@ -33,6 +33,7 @@ export default function Leaderboard() {
           setGames(Object.entries(data).map((item) => item[0]));
         }
         if (selectedGame && data[selectedGame]) { 
+          setDisabledButton(false);
           setPlayers(data[selectedGame]);
           setVisiblePlayers(data[selectedGame].slice(0, 10));
         }

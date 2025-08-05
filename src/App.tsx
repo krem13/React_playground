@@ -1,23 +1,20 @@
 import React from 'react';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Layout from './pages/Layout';
-import About from './pages/About';
-import Projects from './pages/Projects';
-import Contact from './pages/Contact';
+import LeaderboardPage from './pages/LeaderboardPage';
+import Home from './pages/Home';
 
 export default function App() {
   return (
     <BrowserRouter>
       <Layout>
-        <div id="about">
-          <About />
-        </div>
-        <div id="projects">
-          <Projects />
-        </div>
-        <div id="contact">
-          <Contact />
-        </div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/#about" element={<Home />} />
+          <Route path="/#projects" element={<Home />} />
+          <Route path="/#contact" element={<Home />} />
+          <Route path="/leaderboardpage" element={<LeaderboardPage />} />
+        </Routes>
       </Layout>
     </BrowserRouter>
   );

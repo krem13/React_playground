@@ -39,27 +39,27 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             >
               Home
             </Link>
-            <button
-              type="button"
+            <Link
+              to="/#about"
               onClick={() => handleScroll('about')}
-              className="block py-2 px-4 rounded hover:bg-blue-600 md:hover:bg-transparent md:hover:underline text-lg md:text-base text-left bg-transparent border-0"
+              className="block py-2 px-4 rounded hover:bg-blue-600 md:hover:bg-transparent md:hover:underline text-lg md:text-base"
             >
               About
-            </button>
-            <button
-              type="button"
+            </Link>
+            <Link
+              to="/#projects"
               onClick={() => handleScroll('projects')}
-              className="block py-2 px-4 rounded hover:bg-blue-600 md:hover:bg-transparent md:hover:underline text-lg md:text-base text-left bg-transparent border-0"
+              className="block py-2 px-4 rounded hover:bg-blue-600 md:hover:bg-transparent md:hover:underline text-lg md:text-base"
             >
               Projects
-            </button>
-            <button
-              type="button"
+            </Link>
+            <Link
+              to="/#contact"
               onClick={() => handleScroll('contact')}
-              className="block py-2 px-4 rounded hover:bg-blue-600 md:hover:bg-transparent md:hover:underline text-lg md:text-base text-left bg-transparent border-0"
+              className="block py-2 px-4 rounded hover:bg-blue-600 md:hover:bg-transparent md:hover:underline text-lg md:text-base"
             >
               Contact
-            </button>
+            </Link>
           </nav>
           <button
             className="md:hidden flex flex-col gap-1.5 z-50"

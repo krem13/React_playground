@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import ProjectCard from '../components/ProjectCard';
 
 const projects = [
   {
@@ -9,13 +9,19 @@ const projects = [
     link: 'https://github.com/krem13/React_playground',
   },
   {
-    title: 'Weather App',
+    title: 'Car sale website',
     page: '/',
     description: 'A weather forecast app using OpenWeatherMap API and styled with Tailwind CSS.',
     link: 'https://github.com/krem13/React_playground',
   },
   {
-    title: 'Portfolio Website',
+    title: 'Hacker news page',
+    page: '/',
+    description: 'My personal portfolio website showcasing my projects and skills.',
+    link: 'https://github.com/krem13/React_playground',
+  },
+  {
+    title: 'Google map demo',
     page: '/',
     description: 'My personal portfolio website showcasing my projects and skills.',
     link: 'https://github.com/krem13/React_playground',
@@ -29,20 +35,13 @@ export default function Projects() {
         <h2 className="text-3xl font-bold text-blue-700 mb-6 text-center">Projects</h2>
         <div className="space-y-6">
           {projects.map((project) => (
-            <div key={project.title} className="border-b pb-4">
-              <Link to={project.page}>
-                <h3 className="text-xl font-semibold text-gray-800">{project.title}</h3>
-              </Link>
-              <p className="text-gray-600 mb-2">{project.description}</p>
-              <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-600 hover:underline"
-              >
-                View on GitHub
-              </a>
-            </div>
+            <ProjectCard
+              key={project.title}
+              title={project.title}
+              page={project.page}
+              description={project.description}
+              link={project.link}
+            />
           ))}
         </div>
       </div>

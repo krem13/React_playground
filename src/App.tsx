@@ -1,8 +1,8 @@
-import React from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Layout from './pages/Layout';
-import LeaderboardPage from './pages/LeaderboardPage';
-import Home from './pages/Home';
+import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Layout from "./pages/Layout";
+import LeaderboardPage from "./pages/LeaderboardPage";
+import Home from "./pages/Home";
 
 export default function App() {
   return (

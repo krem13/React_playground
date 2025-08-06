@@ -1,9 +1,9 @@
 export type Player = {
-    rank: number;
-    avatar: string;
-    username: string;
-    score: number;
-}
+  rank: number;
+  avatar: string;
+  username: string;
+  score: number;
+};
 
 export interface CustomSelectProps {
   options: string[];
@@ -13,5 +13,5 @@ export interface CustomSelectProps {
 }
 
 export interface LeaderboardItemProps {
-    item: Player;
+  item: Player;
 }

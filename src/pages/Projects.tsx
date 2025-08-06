@@ -1,30 +1,34 @@
-import React from 'react';
-import ProjectCard from '../components/ProjectCard';
+import React from "react";
+import ProjectCard from "../components/ProjectCard";
 
 const projects = [
   {
-    title: 'Games Leaderboard',
-    page: '/leaderboardpage',
-    description: 'This is a small component that displays Leaderbords for the Chess API games.',
-    link: 'https://github.com/krem13/React_playground',
+    title: "Games Leaderboard",
+    page: "/leaderboardpage",
+    description:
+      "This is a small component that displays Leaderbords for the Chess API games.",
+    link: "https://github.com/krem13/React_playground",
   },
   {
-    title: 'Car sale website',
-    page: '/',
-    description: 'A weather forecast app using OpenWeatherMap API and styled with Tailwind CSS.',
-    link: 'https://github.com/krem13/React_playground',
+    title: "Car sale website",
+    page: "/",
+    description:
+      "A weather forecast app using OpenWeatherMap API and styled with Tailwind CSS.",
+    link: "https://github.com/krem13/React_playground",
   },
   {
-    title: 'Hacker news page',
-    page: '/',
-    description: 'My personal portfolio website showcasing my projects and skills.',
-    link: 'https://github.com/krem13/React_playground',
+    title: "Hacker news page",
+    page: "/",
+    description:
+      "My personal portfolio website showcasing my projects and skills.",
+    link: "https://github.com/krem13/React_playground",
   },
   {
-    title: 'Google map demo',
-    page: '/',
-    description: 'My personal portfolio website showcasing my projects and skills.',
-    link: 'https://github.com/krem13/React_playground',
+    title: "Google map demo",
+    page: "/",
+    description:
+      "My personal portfolio website showcasing my projects and skills.",
+    link: "https://github.com/krem13/React_playground",
   },
 ];
 
@@ -32,7 +36,9 @@ export default function Projects() {
   return (
     <div className="bg-gray-50 flex flex-col items-center justify-center p-6">
       <div className="max-w-2xl w-full bg-white rounded-lg shadow-lg p-8">
-        <h2 className="text-3xl font-bold text-blue-700 mb-6 text-center">Projects</h2>
+        <h2 className="text-3xl font-bold text-blue-700 mb-6 text-center">
+          Projects
+        </h2>
         <div className="space-y-6">
           {projects.map((project) => (
             <ProjectCard

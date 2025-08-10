@@ -10,6 +10,13 @@ const projects = [
     link: "https://github.com/krem13/React_playground",
   },
   {
+    title: "Form",
+    page: "/formpage",
+    description:
+      "This is a small component that displays a form for user input.",
+    link: "https://github.com/krem13/React_playground",
+  },
+  {
     title: "Car sale website",
     page: "/",
     description:

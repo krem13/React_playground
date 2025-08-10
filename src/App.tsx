@@ -1,8 +1,9 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Layout from "./pages/Layout";
-import LeaderboardPage from "./pages/LeaderboardPage";
 import Home from "./pages/Home";
+import LeaderboardPage from "./pages/LeaderboardPage";
+import FormPage from "./pages/FormPage";
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
           <Route path="/#projects" element={<Home />} />
           <Route path="/#contact" element={<Home />} />
           <Route path="/leaderboardpage" element={<LeaderboardPage />} />
+          <Route path="/formpage" element={<FormPage />} />
         </Routes>
       </Layout>
     </BrowserRouter>

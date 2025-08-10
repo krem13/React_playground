@@ -70,7 +70,7 @@ export default function CustomTextField() {
                 <textarea
                   id="textarea"
                   title="textarea"
-                  className="form-textarea border border-color-di h-[100px] p-2"
+                  className="border border-di h-[100px] p-2"
                   value={input}
                   onChange={(e) => setInput(e.target.value)}
                 ></textarea>
@@ -79,7 +79,7 @@ export default function CustomTextField() {
                 <label className="font-bold mb-1">Korrigeret</label>
                 <div
                   id="resultarea"
-                  className="border border-blue-500 p-2 h-[100px]"
+                  className="border border-di p-2 h-[100px]"
                 >
                   {loading ? "Henter korrektioner..." : result}
                 </div>
@@ -87,7 +87,7 @@ export default function CustomTextField() {
               <div>
                 <button
                   type="submit"
-                  className="button button--primary bg-color-di1"
+                  className="button button--primary bg-di1 text-white font-bold py-5 px-10 rounded-[4px] mt-6"
                 >
                   Oversæt
                 </button>
@@ -96,7 +96,7 @@ export default function CustomTextField() {
           </form>
         </section>
       </main>
-      <footer id="footer">
+      <footer id="footer" className="w-full max-w-[1680px] p-3 text-center bg-black text-white">
         <div>H. C. Andersens Boulevard 18, 1553 København V</div>
       </footer>
     </>

@@ -7,35 +7,35 @@ const projects = [
     page: "/leaderboardpage",
     description:
       "This is a small component that displays Leaderbords for the Chess API games.",
-    link: "https://github.com/krem13/React_playground",
+    link: "https://github.com/krem13/React_playground/issues/1",
   },
   {
-    title: "Form",
+    title: "Form with text correction",
     page: "/formpage",
     description:
-      "This is a small component that displays a form for user input.",
-    link: "https://github.com/krem13/React_playground",
+      "This is a small component that displays a form for user input with different fields.",
+    link: "https://github.com/krem13/React_playground/issues/",
   },
   {
     title: "Car sale website",
     page: "/",
     description:
       "A weather forecast app using OpenWeatherMap API and styled with Tailwind CSS.",
-    link: "https://github.com/krem13/React_playground",
+    link: "https://github.com/krem13/React_playground/issues/",
   },
   {
     title: "Hacker news page",
     page: "/",
     description:
       "My personal portfolio website showcasing my projects and skills.",
-    link: "https://github.com/krem13/React_playground",
+    link: "https://github.com/krem13/React_playground/issues/",
   },
   {
     title: "Google map demo",
     page: "/",
     description:
       "My personal portfolio website showcasing my projects and skills.",
-    link: "https://github.com/krem13/React_playground",
+    link: "https://github.com/krem13/React_playground/issues/",
   },
 ];
 

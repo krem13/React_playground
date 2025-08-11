@@ -17,7 +17,7 @@ export default function Projects(props: ProjectCardProps) {
           }}
           className="text-blue-600 hover:underline"
         >
-          View on GitHub
+          View issue on GitHub
         </button>
       </div>
     </Link>

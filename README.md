@@ -1,7 +1,15 @@
 # React and Typescript project
 
-This is a sandbox for learning & experimenting with React, Typescript, Next, Tailwind, Storybook and other things from the modern stack.
-I create issues in the repository for each new feature/experiment. You can check them out if you would like to quickly check what's been done.
+This is a sandbox for learning & experimenting with React, Typescript, Next, Tailwind, Storybook and other technologies from the modern stack.
+Note: this project is constantly under construction.
+
+## Project management
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+The styling is done with [tailwindcss](https://tailwindcss.com/).
+
+I create issues in the repository for each new feature/experiment. You can check them out if you want to quickly check what's been done: [Project's Github issues ](https://github.com/krem13/React_playground/issues)
 
 ## Project Setup
 
@@ -51,26 +59,3 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## File Structure
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-The styling is done with [tailwindcss](https://tailwindcss.com/).
-
-### Added files
-
-- src/components/CustomSelect.tsx
-- src/components/Leaderboard.tsx
-- src/components/LeaderboardItem.tsx
-- src/types/leaderboard.interface.ts
-- public/star_icon.svg
-
-### Modified files
-
-- App.tsx
-- index.css
-- index.html
-
-### Unmodified files
-
-test files and config files

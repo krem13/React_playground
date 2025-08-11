@@ -6,8 +6,8 @@ type LayoutProps = {
 };
 
 const footerLinks = [
-  { href: "/privacy", label: "Privacy Policy" },
-  { href: "/terms", label: "Terms of Service" },
+  { href: "/", label: "Privacy Policy" },
+  { href: "/", label: "Terms of Service" },
 ];
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {

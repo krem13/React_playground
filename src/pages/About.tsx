@@ -16,7 +16,7 @@ export default function About() {
           challenging problems. This portfolio showcases my skills and
           experience using some small projects to demonstrate my abilities.
         </p>
-        <p>
+        <p className="text-gray-700 text-lg mb-4">
           I create issues in the repository for each new feature/experiment. You
           can check them out if you want to quickly see what's been
           done:&nbsp;

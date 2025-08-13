@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { ProjectCardProps } from "../types/project.interface";
 
-export default function Projects(props: ProjectCardProps) {
+export default function ProjectCard(props: ProjectCardProps) {
   return (
     <Link to={props.page}>
       <div

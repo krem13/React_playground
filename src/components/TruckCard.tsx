@@ -4,7 +4,7 @@ import { TruckCardProps } from "../types/truck.interface";
 export default function TruckCard(props: TruckCardProps) {
   return (
     <Link to={props.page}>
-      <div className="!mb-20 max-w-[400px] mx-5 my-auto p-2.5 rounded-md border-2 border-gray-400 bg-zinc-950 hover:bg-zinc-900 transition-colors">
+      <div className="!mb-10 max-w-[400px] mx-5 my-auto p-2.5 rounded-md border-2 border-gray-400 bg-zinc-950 hover:bg-zinc-900 transition-colors">
         <div className="flex items-center justify-between">
           <div className="">
             <h1 className="text-left text-lg text-white !font-[700]">

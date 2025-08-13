@@ -21,7 +21,7 @@ export default function CustomTextField() {
           );
           if (response.ok) {
             const data = await response.text();
-            return data ? (
+            return (data && data !== "") ? (
               <span key={idx} className="text-red-500">
                 {data}{" "}
               </span>

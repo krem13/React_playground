@@ -10,11 +10,11 @@ const projects = [
     link: "https://github.com/krem13/React_playground/issues/1",
   },
   {
-    title: "Form with text correction",
+    title: "Form with autocorrect",
     page: "/formpage",
     description:
       "This is a small component that displays a form for user input with different fields.",
-    link: "https://github.com/krem13/React_playground/issues/",
+    link: "https://github.com/krem13/React_playground/issues/3",
   },
   {
     title: "Car sale website",

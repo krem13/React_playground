@@ -4,23 +4,23 @@ import ProjectCard from "../components/ProjectCard";
 const projects = [
   {
     title: "Games Leaderboard",
-    page: "/leaderboardpage",
+    page: "/games",
     description:
       "This is a small component that displays Leaderbords for the Chess API games.",
     link: "https://github.com/krem13/React_playground/issues/1",
   },
   {
     title: "Form with autocorrect",
-    page: "/formpage",
+    page: "/form",
     description:
       "This is a small component that displays a form for user input with different fields.",
     link: "https://github.com/krem13/React_playground/issues/3",
   },
   {
-    title: "Car sale website",
-    page: "/",
+    title: "Used trucks sale website",
+    page: "/marketplace",
     description:
-      "A weather forecast app using OpenWeatherMap API and styled with Tailwind CSS.",
+      "This is a landing page serving as a marketplace for used trucks.",
     link: "https://github.com/krem13/React_playground/issues/",
   },
   {

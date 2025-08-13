@@ -21,7 +21,7 @@ const projects = [
     page: "/marketplace",
     description:
       "This is a landing page serving as a marketplace for used trucks.",
-    link: "https://github.com/krem13/React_playground/issues/",
+    link: "https://github.com/krem13/React_playground/issues/5",
   },
   {
     title: "Hacker news page",

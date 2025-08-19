@@ -25,14 +25,14 @@ const projects = [
   },
   {
     title: "Hacker news page",
-    page: "/",
+    page: "/news",
     description:
       "My personal portfolio website showcasing my projects and skills.",
     link: "https://github.com/krem13/React_playground/issues/",
   },
   {
     title: "Google map demo",
-    page: "/",
+    page: "/google",
     description:
       "My personal portfolio website showcasing my projects and skills.",
     link: "https://github.com/krem13/React_playground/issues/",

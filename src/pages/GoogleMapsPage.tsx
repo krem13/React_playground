@@ -9,6 +9,9 @@ export default function GoogleMapsPage() {
         <h1 className="text-4xl font-semibold my-16 text-gray-900">
           Google Maps API demo
         </h1>
+        <h2 className="text-2xl font-normal my-16 text-gray-900">
+          Under construction
+        </h2>
       </div>
     </>
   );

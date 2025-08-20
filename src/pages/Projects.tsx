@@ -44,6 +44,13 @@ const projects = [
       "My personal portfolio website showcasing my projects and skills.",
     link: "https://github.com/krem13/React_playground/issues/9",
   },
+  {
+    title: "Interactive dashboard",
+    page: "/dashboard",
+    description:
+      "My personal portfolio website showcasing my projects and skills.",
+    link: "https://github.com/krem13/React_playground/issues/",
+  },
 ];
 
 export default function Projects() {

@@ -8,6 +8,7 @@ import MarketplacePage from "./pages/MarketplacePage";
 import GoogleMapsPage from "./pages/GoogleMapsPage";
 import GoogleBooksPage from "./pages/GoogleBooksPage";
 import NewsPage from "./pages/NewsPage";
+import InteractiveDashboardPage from "./pages/InteractiveDashboardPage";
 
 export default function App() {
   return (
@@ -24,6 +25,7 @@ export default function App() {
           <Route path="/googlemaps" element={<GoogleMapsPage />} />
           <Route path="/googlebooks" element={<GoogleBooksPage />} />
           <Route path="/news" element={<NewsPage />} />
+          <Route path="/dashboard" element={<InteractiveDashboardPage />} />
         </Routes>
       </Layout>
     </BrowserRouter>

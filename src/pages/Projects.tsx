@@ -28,21 +28,21 @@ const projects = [
     page: "/googlemaps",
     description:
       "Displays a Google map with pinned properties and filters for location and type.",
-    link: "https://github.com/krem13/React_playground/issues/",
+    link: "https://github.com/krem13/React_playground/issues/7",
   },
   {
     title: "Google books demo",
     page: "/googlebooks",
     description:
       "My personal portfolio website showcasing my projects and skills.",
-    link: "https://github.com/krem13/React_playground/issues/",
+    link: "https://github.com/krem13/React_playground/issues/8",
   },
   {
     title: "Hacker news page",
     page: "/news",
     description:
       "My personal portfolio website showcasing my projects and skills.",
-    link: "https://github.com/krem13/React_playground/issues/",
+    link: "https://github.com/krem13/React_playground/issues/9",
   },
 ];
 

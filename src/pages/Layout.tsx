@@ -89,9 +89,9 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             &copy; {new Date().getFullYear()} My React Sandbox
           </div>
           <div className="flex gap-4">
-            {footerLinks.map((link) => (
+            {footerLinks.map((link, key) => (
               <Link
-                key={link.href}
+                key={key}
                 to={link.href}
                 className="hover:underline text-sm"
               >

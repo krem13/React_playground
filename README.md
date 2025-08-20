@@ -1,6 +1,7 @@
 # React and Typescript project
 
-This is a sandbox for learning & experimenting with React, Typescript, Next, Tailwind, Storybook and other technologies from the modern stack.
+This is a sandbox for learning & experimenting with React, Typescript, Next, Tailwind, Storybook and other technologies from the modern stack. Some of the things I have worked on here are: games features, custom forms, marketplace, demos for different APIs, like Google Maps, Google Books & Hacker News.
+
 Note: this project is constantly under construction.
 
 ## Project management

@@ -5,7 +5,8 @@ import Home from "./pages/Home";
 import GamesPage from "./pages/GamesPage";
 import FormPage from "./pages/FormPage";
 import MarketplacePage from "./pages/MarketplacePage";
-import GooglePage from "./pages/GooglePage";
+import GoogleMapsPage from "./pages/GoogleMapsPage";
+import GoogleBooksPage from "./pages/GoogleBooksPage";
 import NewsPage from "./pages/NewsPage";
 
 export default function App() {
@@ -20,7 +21,8 @@ export default function App() {
           <Route path="/games" element={<GamesPage />} />
           <Route path="/form" element={<FormPage />} />
           <Route path="/marketplace" element={<MarketplacePage />} />
-          <Route path="/google" element={<GooglePage />} />
+          <Route path="/googlemaps" element={<GoogleMapsPage />} />
+          <Route path="/googlebooks" element={<GoogleBooksPage />} />
           <Route path="/news" element={<NewsPage />} />
         </Routes>
       </Layout>

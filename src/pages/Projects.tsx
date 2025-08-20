@@ -24,15 +24,22 @@ const projects = [
     link: "https://github.com/krem13/React_playground/issues/5",
   },
   {
-    title: "Hacker news page",
-    page: "/news",
+    title: "Google maps demo",
+    page: "/googlemaps",
+    description:
+      "Displays a Google map with pinned properties and filters for location and type.",
+    link: "https://github.com/krem13/React_playground/issues/",
+  },
+  {
+    title: "Google books demo",
+    page: "/googlebooks",
     description:
       "My personal portfolio website showcasing my projects and skills.",
     link: "https://github.com/krem13/React_playground/issues/",
   },
   {
-    title: "Google map demo",
-    page: "/google",
+    title: "Hacker news page",
+    page: "/news",
     description:
       "My personal portfolio website showcasing my projects and skills.",
     link: "https://github.com/krem13/React_playground/issues/",

@@ -1,5 +1,6 @@
 import React from "react";
 import ScrollToTop from "../components/ScrollToTop";
+import GoogleMaps from "../components/GoogleMaps";
 
 export default function GoogleMapsPage() {
   return (
@@ -19,16 +20,32 @@ export default function GoogleMapsPage() {
         <div className="flex w-full justify-end items-center border border-gray-500">
           <div className="w-1/5 border-r border-gray-500 p-4 text-gray-500">
             <h2 className="font-semibold my-2">Ejendomstype:</h2>
-            <button className="border border-gray-500 px-4 py-1 w-full uppercase mb-2">Villa</button>
-            <button className="border border-gray-500 px-4 py-1 w-full uppercase mb-2">Andelsbolig</button>
-            <button className="border border-gray-500 px-4 py-1 w-full uppercase mb-2">Ejerlejlighed</button>
-            <button className="border border-gray-500 px-4 py-1 w-full uppercase mb-2">Villalejlighed</button>
+            <button className="border border-gray-500 px-4 py-1 w-full uppercase mb-2">
+              Villa
+            </button>
+            <button className="border border-gray-500 px-4 py-1 w-full uppercase mb-2">
+              Andelsbolig
+            </button>
+            <button className="border border-gray-500 px-4 py-1 w-full uppercase mb-2">
+              Ejerlejlighed
+            </button>
+            <button className="border border-gray-500 px-4 py-1 w-full uppercase mb-2">
+              Villalejlighed
+            </button>
             <h2 className="font-semibold my-2">Byområde:</h2>
-            <button className="border border-gray-500 px-4 py-1 w-full uppercase mb-2">Valby</button>
-            <button className="border border-gray-500 px-4 py-1 w-full uppercase mb-2">Amager1</button>
-            <button className="border border-gray-500 px-4 py-1 w-full uppercase mb-2">Amager2</button>
+            <button className="border border-gray-500 px-4 py-1 w-full uppercase mb-2">
+              Valby
+            </button>
+            <button className="border border-gray-500 px-4 py-1 w-full uppercase mb-2">
+              Amager1
+            </button>
+            <button className="border border-gray-500 px-4 py-1 w-full uppercase mb-2">
+              Amager2
+            </button>
           </div>
-          <div className="w-4/5">Map here</div>
+          <div className="w-4/5">
+            <GoogleMaps />
+          </div>
         </div>
       </div>
     </>

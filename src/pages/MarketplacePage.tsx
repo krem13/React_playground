@@ -114,8 +114,8 @@ export default function FormPage() {
   return (
     <>
       <ScrollToTop />
-      <div className="mb-16 flex flex-col text-center items-center justify-center">
-        <h1 className="text-4xl font-semibold mt-10 mb-24 text-gray-900">
+      <div className="bg-slate-950 mb-16 flex flex-col text-center items-center justify-center">
+        <h1 className="text-4xl font-semibold mt-10 mb-24 text-teal-400">
           Used trucks marketplace
         </h1>
         <div className="block md:grid md:grid-cols-3 md:gap-5">

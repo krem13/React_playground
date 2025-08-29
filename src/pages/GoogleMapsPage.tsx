@@ -18,7 +18,7 @@ export default function GoogleMapsPage() {
         </div>
 
         <div className="flex w-full justify-end items-center border border-gray-500">
-          <div className="w-1/5 border-r border-gray-500 p-4 text-gray-500">
+          <div className="w-1/4 border-r border-gray-500 p-4 text-gray-500">
             <h2 className="font-semibold my-2">Ejendomstype:</h2>
             <button className="border border-gray-500 px-4 py-1 w-full uppercase mb-2">
               Villa
@@ -43,7 +43,7 @@ export default function GoogleMapsPage() {
               Amager2
             </button>
           </div>
-          <div className="w-4/5">
+          <div className="w-3/4">
             <GoogleMaps />
           </div>
         </div>
